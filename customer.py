@@ -4,10 +4,9 @@ class Customer:
         self.first_name = first_name
         self.family_name = family_name
         self.age = age
-#        self.full_name = first_name + " " + family_name
 
     def full_name(self):
-        return self.first_name + " " + self.family_name
+        return f"{self.first_name} {self.family_name}"
 
     def entry_fee(self):
         if self.age <= 3:
@@ -57,10 +56,6 @@ class Customer:
         fee_8 = self.entry_fee_1()
         return f"{name_8}|{self.age}|{fee_8}"
 
-#    def asobi(self):
-#        name = self.full_name()
-#        return f"{name}"
-
 
 ken = Customer(first_name="Ken", family_name="Tanaka", age=15)
 tom = Customer(first_name="Tom", family_name="Ford", age=57)
@@ -69,7 +64,6 @@ michelle = Customer(first_name="Michelle", family_name="Tanner", age=3)  # C-5�
 
 # 以降で各問のコードを追加していく
 
-# print(ken.asobi())
 # C-1
 print("C-1_answer")
 print(ken.full_name())  # "Ken Tanaka" という値を出力
